@@ -1,0 +1,130 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+padding:20px;
+}
+
+.container{
+width:100%;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:15px;
+margin-bottom:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+
+.card h4{
+font-size:13px;
+margin-bottom:10px;
+}
+
+.card h1{
+font-size:36px;
+color:#6a0dad;
+}
+
+.verde{
+color:#28a745 !important;
+}
+
+.vermelho{
+color:#dc3545 !important;
+}
+
+.laranja{
+color:#ff8c00 !important;
+}
+
+.graficos{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:15px;
+margin-bottom:20px;
+}
+
+.grafico{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+
+.grafico h3{
+text-align:center;
+margin-bottom:15px;
+font-size:15px;
+}
+
+.tabelas{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:15px;
+}
+
+.tabela,
+.ranking{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+th{
+background:#eee;
+}
+
+th,td{
+padding:10px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+.atrasada{
+color:red;
+font-weight:bold;
+}
+
+.prazo{
+color:green;
+font-weight:bold;
+}
+
+.ranking ol{
+margin-top:15px;
+margin-left:20px;
+}
+
+.ranking li{
+margin-bottom:10px;
+}
+
+.alerta{
+margin-top:20px;
+padding:15px;
+background:#ffe5e5;
+border:1px solid red;
+border-radius:10px;
+color:#c00000;
+font-weight:bold;
+}

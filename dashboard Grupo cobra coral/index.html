@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Logística</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="cards">
+
+        <div class="card">
+            <h4>TOTAL DE ENTREGAS</h4>
+            <h1>10</h1>
+            <p>100% do total</p>
+        </div>
+
+        <div class="card">
+            <h4>ENTREGAS ATRASADAS</h4>
+            <h1 class="vermelho">7</h1>
+            <p>70% do total</p>
+        </div>
+
+        <div class="card">
+            <h4>ENTREGAS NO PRAZO</h4>
+            <h1 class="verde">3</h1>
+            <p>30% do total</p>
+        </div>
+
+        <div class="card">
+            <h4>TAXA DE ATRASO</h4>
+            <h1 class="laranja">70%</h1>
+            <p>Índice de atraso</p>
+        </div>
+
+        <div class="card">
+            <h4>MAIOR ATRASO</h4>
+            <h1 class="vermelho">7 dias</h1>
+            <p>Entrega ID 306</p>
+        </div>
+
+    </div>
+
+    <div class="graficos">
+
+        <div class="grafico">
+            <h3>ENTREGAS ATRASADAS POR TRANSPORTADORA</h3>
+            <canvas id="barras"></canvas>
+        </div>
+
+        <div class="grafico">
+            <h3>ENTREGAS ATRASADAS POR REGIÃO</h3>
+            <canvas id="regioes"></canvas>
+        </div>
+
+        <div class="grafico">
+            <h3>TAXA DE ATRASO (%)</h3>
+            <canvas id="pizza"></canvas>
+        </div>
+
+    </div>
+
+    <div class="tabelas">
+
+        <div class="tabela">
+
+            <h3>DETALHAMENTO DAS ENTREGAS</h3>
+
+            <table>
+
+                <tr>
+                    <th>ID</th>
+                    <th>Transportadora</th>
+                    <th>Região</th>
+                    <th>Prazo</th>
+                    <th>Dias Reais</th>
+                    <th>Atraso</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>301</td>
+                    <td>RotaMax</td>
+                    <td>Sudeste</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td class="atrasada">Atrasada</td>
+                </tr>
+
+                <tr>
+                    <td>302</td>
+                    <td>ViaCargo</td>
+                    <td>Sul</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td class="prazo">No Prazo</td>
+                </tr>
+
+                <tr>
+                    <td>303</td>
+                    <td>FlashLog</td>
+                    <td>Nordeste</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>5</td>
+                    <td class="atrasada">Atrasada</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="ranking">
+
+            <h3>RANKING: ENTREGAS MAIS CRÍTICAS</h3>
+
+            <ol>
+                <li>ID 306 - 7 dias</li>
+                <li>ID 303 - 5 dias</li>
+                <li>ID 301 - 4 dias</li>
+                <li>ID 305 - 4 dias</li>
+                <li>ID 310 - 4 dias</li>
+            </ol>
+
+            <div class="alerta">
+                ⚠️ Priorizar as entregas acima e acompanhar a performance da transportadora FlashLog na região Sul.
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
